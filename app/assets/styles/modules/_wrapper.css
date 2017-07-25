@@ -4,5 +4,16 @@
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  
+
+  &--medium {
+    max-width: 976px;
+  }
+
+  /*the below padding is done as the image has padding accross it because a wrapper is wrapped inside another wrapper(when on small screen).
+  This shall remove the padding on mobile screen around the image*/
+  .wrapper {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
 }
