@@ -12,15 +12,32 @@
 
 	&__title {
 		font-weight: 300;
-		color: #2f5772;
-		font-size: 4.8rem;
+		color: $mainBlue;
 		margin: 0;
+		font-size: 1.1rem;
+
+		@mixin atSmall {
+			font-size: 2rem;
+		}
+
+		@mixin atMedium {
+			font-size: 3.2rem;
+		}
+
+		@mixin atLarge {
+			font-size: 4.8rem;
+		}
 	}
 	&__subtitle {
 		font-weight: 300;
-		color: #2f5772;
+		color: $mainBlue;
 		font-size: 2.9rem;
 		margin: 0;
+
+		@mixin atSmall {
+			font-size: 2.9rem;
+		}
+
 	}
 
 	&__description{
