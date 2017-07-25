@@ -1,0 +1,29 @@
+.row {
+
+  @mixin clearfix;
+
+/*This is to remove the gutter of the right how we get started div*/
+  &--gutters {
+    margin-right: -65px;
+  }
+
+  /*divs in the row gutters class*/
+  &--gutters > div{
+    padding-right: 65px;
+  }
+
+
+  @mixin atMedium {
+
+    &__medium-4 {
+      float:left;
+      width: 33.33%;
+    }
+
+    &__medium-8 {
+      float: left;
+      width: 66.66%;
+    }
+    
+  }
+}

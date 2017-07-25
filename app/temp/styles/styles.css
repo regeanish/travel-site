@@ -460,6 +460,13 @@ img {
 	height: auto;
 }
 
+* {
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+/*This mixin is used to clear the floating elements with class row by putting them on new row. without this bottom content shall overlap the top one*/
+
 .large-hero {
 	border-bottom: 10px solid #2f5572;
 	position: relative;
@@ -551,17 +558,22 @@ img {
   }
 
 .wrapper {
+  
+  /*This is to remove the gutter of the right how we get started div*/
+  overflow: hidden;
   padding-left: 18px;
   padding-right: 18px;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-
 }
 
 .wrapper--medium {
     max-width: 976px;
   }
+
+/*the below padding is done as the image has padding accross it because a wrapper is wrapped inside another wrapper(when on small screen).
+  This shall remove the padding on mobile screen around the image*/
 
 .wrapper .wrapper {
     padding-left: 0;
@@ -633,4 +645,35 @@ img {
 
 .headline--b-margin-large {
   margin-bottom:1.6em;
+  }
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;;
+  }
+
+/*This is to remove the gutter of the right how we get started div*/
+
+.row--gutters {
+    margin-right: -65px;
+  }
+
+/*divs in the row gutters class*/
+
+.row--gutters > div{
+    padding-right: 65px;
+  }
+
+@media (min-width: 800px){
+
+    .row__medium-4 {
+      float:left;
+      width: 33.33%;
+    }
+
+    .row__medium-8 {
+      float: left;
+      width: 66.66%;
+    }
   }

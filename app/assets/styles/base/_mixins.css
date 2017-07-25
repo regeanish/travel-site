@@ -18,3 +18,14 @@
     @mixin-content;
   }
 }
+
+
+/*This mixin is used to clear the floating elements with class row by putting them on new row. without this bottom content shall overlap the top one*/
+
+@define-mixin clearfix {
+  &::after {
+    content: "";
+    clear: both;
+    display: table;;
+  }
+}
