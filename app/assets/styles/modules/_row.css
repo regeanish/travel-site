@@ -14,16 +14,24 @@
 
 
   @mixin atMedium {
-
     &__medium-4 {
       float:left;
       width: 33.33%;
+    }
+
+  /*overwritting the default size of 33% width in order to look better */
+    &__medium-4--larger{
+      width: 37%;
     }
 
     &__medium-8 {
       float: left;
       width: 66.66%;
     }
-    
+/*overwritting the default size of 66.66% width in order to look better */
+    &__medium-8--smaller{
+      width: 63%;
+    }
+
   }
 }
