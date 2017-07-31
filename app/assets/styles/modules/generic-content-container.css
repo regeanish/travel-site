@@ -2,8 +2,9 @@
 
 
   p {
+    font-weight: 300;
     line-height: 1.65;
-    margin: 1.8rem 0;
+    margin: 0 0 1.8rem 0; /* only bottom margin for generic class */
     /*default font-size is 1rem*/
     @mixin atSmall{
       font-size: 1.125rem;
