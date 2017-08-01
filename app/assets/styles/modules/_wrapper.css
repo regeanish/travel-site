@@ -12,6 +12,29 @@
     max-width: 976px;
   }
 
+  /*full screeen with white background for small screens*/
+
+  &--no-padding-until-medium {
+    padding-left: 0;
+    padding-right: 0;
+
+    @mixin atMedium {
+      padding-left: 18px;
+      padding-right: 18px;
+    }
+  }
+
+
+  &--no-padding-until-large {
+    padding-left: 0;
+    padding-right: 0;
+
+    @mixin atLarge {
+      padding-left: 18px;
+      padding-right: 18px;
+    }
+  }
+
   /*the below padding is done as the image has padding accross it because a wrapper is wrapped inside another wrapper(when on small screen).
   This shall remove the padding on mobile screen around the image*/
   .wrapper {
