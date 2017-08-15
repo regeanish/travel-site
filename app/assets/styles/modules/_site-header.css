@@ -49,7 +49,12 @@
       display: block;
     }
 
+    &--is-visible {
+      display: block;
+    }
   }
+
+
 
  /*required to remove the text in the div(clear view escapes)*/
   &__logo__graphic {
