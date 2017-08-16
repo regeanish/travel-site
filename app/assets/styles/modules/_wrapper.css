@@ -12,6 +12,9 @@
     max-width: 976px;
   }
 
+  &--narrow {
+    max-width: 470px;
+  }
   /*full screeen with white background for small screens*/
 
   &--no-padding-until-medium {
