@@ -20,6 +20,7 @@
   }
 
   /*divs in the row gutters class*/
+
   &--gutters > div{
     padding-right: 65px;
   }
@@ -102,7 +103,7 @@
   }
     /*Begin equl height rules using flexbox*/
 
-  &--equal-height-at-medium {
+  .flexbox &--equal-height-at-medium {
     @mixin atMedium {
       display: flex;
     }
@@ -113,7 +114,7 @@
     }
   }
 
-  &--equal-height-at-large {
+  .flexbox &--equal-height-at-large {
     @mixin atLarge {
       display: flex;
     }
